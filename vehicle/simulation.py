@@ -3,6 +3,8 @@ import pygame
 
 class Simulation:
     vehicles = []
+    num_collisions = 0
+    total_delay = 0.0
 
     def __init__(self):
         pass

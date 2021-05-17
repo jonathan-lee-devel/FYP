@@ -12,9 +12,11 @@ class Vehicle:
     dx = 0.0
     dy = 0.0
 
-    def __init__(self, x: float, y: float):
+    def __init__(self, x: float, y: float, dx: float, dy: float):
         self.x = x
         self.y = y
+        self.dx = dx
+        self.dy = dy
 
     def update(self):
         self.x += self.dx
@@ -22,8 +24,8 @@ class Vehicle:
         # Boundary checking
         if self.x < 0.0:
             self.x = 0.0
-        if self.y < 0.0:
-            self.y = 0.0
+        if self.y < -50.0:
+            self.y = -50.0
         if self.x > 1000.0:
             self.x = 1000.0
         if self.y > 1000.0:
