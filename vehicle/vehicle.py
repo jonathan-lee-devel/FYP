@@ -1,6 +1,5 @@
-import uuid
-
 import pygame
+import uuid
 
 vehicle_sprite = pygame.image.load("images/vehicle.png")
 
@@ -11,6 +10,7 @@ class Vehicle:
     y = 0.0
     dx = 0.0
     dy = 0.0
+    delay = 0.0
 
     def __init__(self, x: float, y: float, dx: float, dy: float):
         self.x = x

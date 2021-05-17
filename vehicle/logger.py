@@ -24,7 +24,7 @@ def log_simulation(simulation: Simulation):
 
 def log_simulation_final(simulation: Simulation):
     output_log = {
-        "num_collisions": simulation.num_collisions,
+        "num_collisions": len(simulation.collisions),
         "total_delay": simulation.total_delay,
         "vehicle_states": vehicle_states
     }

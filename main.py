@@ -1,5 +1,6 @@
 import pygame
 
+from vehicle.collision import Collision
 from vehicle.logger import log_simulation, log_simulation_final
 from vehicle.simulation import Simulation
 from vehicle.vehicle import Vehicle
@@ -18,7 +19,7 @@ simulation = Simulation()
 vehicle_x_coords = [330.0, 330.0, 450.0, 450.0]
 vehicle_y_coords = [0.0, 100.0, 600.0, 700.0]
 vehicle_dx = [0.0, 0.0, 0.0, 0.0]
-vehicle_dy = [0.05, 0.1, -0.1, -0.1]
+vehicle_dy = [0.15, 0.1, -0.1, -0.1]
 for i in range(len(vehicle_x_coords)):
     vehicle = Vehicle(vehicle_x_coords[i], vehicle_y_coords[i], vehicle_dx[i], vehicle_dy[i])
     simulation.vehicles.append(vehicle)
